@@ -38,7 +38,7 @@
   --color-javascript:  #F7DF1E;
   --color-python:      #3776AB;
   --color-vuejs:       #4FC08D;
-  --color-blank:       #ffffff;
+  --color-blank:       var(--bg-color);
 }
 /* Variables end */
 
@@ -68,26 +68,31 @@ body {
 #about-section {
   display: flex;
   /* max-width: 80rem; */
-  align-items: center;
-  justify-content: center;
-  height: 60vh;
+  /* align-items: center; */
+  justify-content: space-around;
+  /* height: 60vh; */
   background-color: var(--bg-color);
   /* border:5px solid black; */
+  padding: 5rem;
 }
 
 #projects-section {
-  height: 90vh;
+  /* height: 90vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   padding: 5rem;
 }
 
 #contact-section {
-  height: 80vh;
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
+  /* height: 80vh; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
   background-repeat: no-repeat;
-  background-position: center; */
-  background-size: 100%;
+  /* background-position: center; */
+  background-size: cover;
   /* padding: 5rem; */
 }
 
@@ -178,9 +183,16 @@ div:not(:last-child) {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-flow: row wrap;
   padding: 1rem 6rem;
   /* margin: 1rem; */
   /* border:5px solid orange; */
+}
+
+#blank-block {
+  height: 10vh;
+  width: 10vh;
+  border:5px solid orange;
 }
 
 #about-img img {
@@ -216,8 +228,12 @@ div:not(:last-child) {
 
 .projects-container {
   display: flex;
-  align-items: start;
-  justify-content: center;
+  align-items: flex-start;
+  /* justify-content: flex-start; */
+  /* align-items: center; */
+  justify-content: space-around;
+  flex-flow: row wrap;
+  padding: 1rem 2rem;
   /* max-height: 80%; */
   /* border:5px solid black; */
   padding-bottom: var(--bottom-margin-2);
@@ -225,13 +241,18 @@ div:not(:last-child) {
 
 .projects-title {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .project-container {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  /* text-align: center; */
   width: 21.875rem;
-  /* height: 30rem; */
+  /* max-height: 30rem; */
   padding: 1rem;
   /* border:5px solid orange; */
 }
@@ -261,19 +282,31 @@ div:not(:last-child) {
 }
 
 .contact {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
+  padding: 4rem;
+  /* border:5px solid orange; */
 }
 
 .contact h2 {
   color: white;
   text-align: center;
+  margin-top: 2rem;
   margin-bottom: var(--bottom-margin-2);
+}
+
+.contact-form .h-captcha {
+  display: flex;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  justify-content: center;
+  margin-left: 5rem;
 }
 
 .contact-form-container {
   max-width: 40.75rem;
   margin: 0 auto;
-  padding: 0.938rem;
+  padding: 1rem;
+  padding-bottom: 3rem;
   border-radius: 5px;
   box-shadow: 0 3px 10px white;
   background-color: white;
@@ -323,6 +356,10 @@ div:not(:last-child) {
   background-color: var(--primary-color);
   border: 2px solid var(--primary-color);
   cursor: pointer;
+}
+
+.h-captcha {
+  /* margin-left: 20%; */
 }
 
 /* Hexagons */
