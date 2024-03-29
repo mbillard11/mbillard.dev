@@ -48,11 +48,11 @@
     /* font-family: var(--font-family); */
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   body {
-    background-color: lightblue;
+    background-color: black;
   }
-}
+} */
 
 body {
   font-family: "Quicksand" !important;
@@ -73,7 +73,7 @@ body {
   /* height: 60vh; */
   background-color: var(--bg-color);
   /* border:5px solid black; */
-  padding: 5rem;
+  padding: 3rem;
 }
 
 #projects-section {
@@ -150,9 +150,9 @@ li {
     /* border:1px solid orange; */
 }
 
-.socials {
-  /* border:1px solid orange; */
-}
+/* .socials {
+  border:1px solid orange;
+} */
 
 #feature-text {
   margin-left: 8px;
@@ -175,44 +175,47 @@ li {
 }
 
 /* Div spacing */
-div:not(:last-child) {
+/* div:not(:last-child) {
   margin-right: 5rem;
-}
+} */
 
 #about {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  /* align-content: center; */
+  justify-content: center;
   flex-flow: row wrap;
-  padding: 1rem 6rem;
+  /* padding: 1rem 4rem; */
   /* margin: 1rem; */
   /* border:5px solid orange; */
 }
 
-#blank-block {
+/* #blank-block {
   height: 10vh;
   width: 10vh;
   border:5px solid orange;
-}
+} */
 
-#about-img img {
-  /* height: 30rem; */
+/* #about-img img {
+  height: 30rem;
   width: 25rem;
-}
+} */
 
 #about-text {
   /* height: 20rem; */
-  width: 30rem;
+  max-width: 30rem;
+  border:5px solid orange;
 }
 
 #about h2 {
-  margin-bottom: var(--bottom-margin);
+  /* margin-bottom: var(--bottom-margin); */
   text-align: center;
 }
 
 #about p {
   line-height: var(--line-height);
   padding: 0.4rem;
+  /* border:5px solid orange; */
 }
 
 .projects {
@@ -251,7 +254,7 @@ div:not(:last-child) {
   flex-direction: column;
   /* justify-content: space-evenly; */
   /* text-align: center; */
-  width: 21.875rem;
+  width: 21rem;
   /* max-height: 30rem; */
   padding: 1rem;
   /* border:5px solid orange; */
@@ -369,6 +372,7 @@ div:not(:last-child) {
   grid-auto-rows: calc(var(--hex-width) - 28.87px/2);
   grid-gap: var(--hex-between) var(--hex-between);
   padding-bottom: var(--hex-border);
+  border:5px solid orange;
 }
 .hexagon {
   align-items: center;
