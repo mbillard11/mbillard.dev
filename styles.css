@@ -204,7 +204,7 @@ li {
 #about-text {
   /* height: 20rem; */
   max-width: 30rem;
-  border:5px solid orange;
+  /* border:5px solid orange; */
 }
 
 #about h2 {
@@ -368,11 +368,11 @@ li {
 /* Hexagons */
 .hexagon-container {
   display: grid;
-  grid-template-columns: var(--hex-width) var(--hex-width) var(--hex-width) var(--hex-width);
+  grid-template-columns: var(--hex-width) var(--hex-width) var(--hex-width);
   grid-auto-rows: calc(var(--hex-width) - 28.87px/2);
   grid-gap: var(--hex-between) var(--hex-between);
   padding-bottom: var(--hex-border);
-  border:5px solid orange;
+  /* border:5px solid orange; */
 }
 .hexagon {
   align-items: center;
@@ -386,6 +386,12 @@ li {
   position: relative;
   transition: var(--hex-transition);
   width: var(--hex-width);
+}
+
+.hex-blank {
+  transition: none !important;
+  cursor: auto;
+  fill: none !important;
 }
 
 .hexagon::after,
@@ -417,8 +423,19 @@ li {
   border-bottom-color: var(--color-hex-hover);
   }
  
-.hexagon:nth-child(8n + 5),
+/* .hexagon:nth-child(8n + 1),
+.hexagon:nth-child(8n + 2),
 .hexagon:nth-child(8n + 6),
+.hexagon:nth-child(8n + 0) {
+  margin-left: calc(var(--hex-width) / 2 + var(--hex-between) / 2);
+} */
+
+.hexagon:nth-child(-n + 1),
+.hexagon:nth-child(-n + 2),
+.hexagon:nth-child(-n + 3) {
+  margin-left: calc(var(--hex-width) / 2 + var(--hex-between) / 2);
+}
+
 .hexagon:nth-child(8n + 7),
 .hexagon:nth-child(8n + 8) {
   margin-left: calc(var(--hex-width) / 2 + var(--hex-between) / 2);
