@@ -78,7 +78,7 @@ body {
   /* max-width: 80rem; */
   /* align-items: center; */
   justify-content: space-around;
-  /* height: 60vh; */
+  min-height: 60vh;
   background-color: var(--bg-color);
   /* border:5px solid black; */
   padding: 3rem;
@@ -168,6 +168,7 @@ li {
 
 #about-text {
   max-width: 30rem;
+  margin: 5rem 5rem;
   /* border:5px solid orange; */
 }
 
