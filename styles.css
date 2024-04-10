@@ -552,6 +552,9 @@ li {
     height: 24px;
     background-color: white;
   }
+  #about-text {
+    margin: 5rem 0rem;
+  }
   /* .h-captcha {
     /* position: relative; */
     /* width: %; */
