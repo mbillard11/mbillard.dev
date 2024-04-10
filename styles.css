@@ -50,7 +50,6 @@ html, body {
 #navbar {
     position: fixed;
     top: 0px;
-    /* font-family: var(--font-family); */
 }
 
 
@@ -64,7 +63,6 @@ body {
   height: 100vh;
   min-height: 100vh;
   background-image: url('images/mitch_mountain.jpg');
-  /* min-width: none; */
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
@@ -75,17 +73,12 @@ body {
 
 #about-section {
   display: flex;
-  /* max-width: 80rem; */
-  /* align-items: center; */
   justify-content: space-around;
-  /* height: 60vh; */
   background-color: var(--bg-color);
-  /* border:5px solid black; */
   padding: 3rem;
 }
 
 #projects-section {
-  /* height: 90vh; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,14 +87,8 @@ body {
 }
 
 #contact-section {
-  /* height: 80vh; */
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
   background-repeat: no-repeat;
-  /* background-position: center; */
   background-size: cover;
-  /* padding: 5rem; */
 }
 
 ul {
@@ -163,12 +150,10 @@ li {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-  /* border:5px solid orange; */
 }
 
 #about-text {
   max-width: 30rem;
-  /* border:5px solid orange; */
 }
 
 #about h2 {
@@ -178,7 +163,6 @@ li {
 #about p {
   line-height: var(--line-height);
   padding: 0.4rem;
-  /* border:5px solid orange; */
 }
 
 .projects {
@@ -197,7 +181,6 @@ li {
   align-items: flex-start;
   justify-content: space-around;
   flex-flow: row wrap;
-  /* border:5px solid black; */
   padding-bottom: var(--bottom-margin-2);
 }
 
@@ -213,7 +196,6 @@ li {
   flex-direction: column;
   width: 21rem;
   padding: 1rem;
-  /* border:5px solid orange; */
 }
 
 .project-container p {
@@ -242,7 +224,6 @@ li {
 
 .contact {
   padding: 4rem;
-  /* border:5px solid orange; */
 }
 
 .contact h2 {
@@ -255,7 +236,6 @@ li {
 .contact-form .h-captcha {
   display: flex;
   justify-content: center;
-  /* border:1px solid orange; */
 }
 
 .contact-form-container {
@@ -266,7 +246,6 @@ li {
   border-radius: 5px;
   box-shadow: 0 3px 10px white;
   background-color: white;
-  /* border:5px solid orange; */
 }
 
 .contact-form-container label {
@@ -276,7 +255,6 @@ li {
 }
 
 .contact .form-control {
-  /* border:5px solid orange; */
   border: none;
 }
 
@@ -321,7 +299,6 @@ li {
   grid-auto-rows: calc(var(--hex-width) - 28.87px/2);
   grid-gap: var(--hex-between) var(--hex-between);
   padding-bottom: var(--hex-border);
-  /* border:5px solid orange; */
 }
 .hexagon {
   align-items: center;
@@ -341,7 +318,6 @@ li {
   transition: none !important;
   cursor: auto;
   fill: none !important;
-  /* display: none; */
   visibility: hidden;
 }
 
@@ -373,13 +349,6 @@ li {
   border-top-color: var(--color-hex-hover);
   border-bottom-color: var(--color-hex-hover);
   }
- 
-/* .hexagon:nth-child(8n + 1),
-.hexagon:nth-child(8n + 2),
-.hexagon:nth-child(8n + 6),
-.hexagon:nth-child(8n + 0) {
-  margin-left: calc(var(--hex-width) / 2 + var(--hex-between) / 2);
-} */
 
 .hexagon:nth-child(-n + 1),
 .hexagon:nth-child(-n + 2),
@@ -532,9 +501,7 @@ li {
     position: relative;
     color: whitesmoke;
     top: 55%;
-    /* left: 10%; */
     transform: translateX(5%);
-    /* max-width: 75%; */
     flex-direction: column;
   }
   .socials a {
