@@ -1,7 +1,21 @@
+var text_color;
+
+calcTextColor;
+window.addEventListener('resize', calcTextColor);
+
+
+function calcTextColor() {
+  if (window.matchMedia("(max-width: 600px)").matches) {
+    text_color = "white"
+  } else {
+    text_color = "black"
+  }
+}
+
 const carouselText = [
-  { text: "Mitchell Billard", color: "black" },
-  { text: "a Developer", color: "black" },
-  { text: "a Pipeline TD", color: "black" },
+  { text: "Mitchell Billard", color: text_color },
+  { text: "a Developer", color: text_color },
+  { text: "a Pipeline TD", color: text_color },
 ];
 
 $(document).ready(async function () {
