@@ -222,6 +222,7 @@ li {
 }
 
 .project-title {
+  margin-top: 2rem;
   margin-bottom: var(--bottom-margin);
 }
 
@@ -237,13 +238,20 @@ li {
   margin: 10px;
 }
 
+.project-pic {
+  width: 80%;
+  height: 8rem;
+  border-radius: 8px;
+  background-color: whitesmoke;
+  box-shadow: 0 5px 8px var(--primary-shadow);
+}
+
 .bgmtl {
   background-image: url('images/j-photos-q4xL1d1PfVU-unsplash.jpg');
 }
 
 .contact {
   padding: 4rem;
-  /* border:5px solid orange; */
 }
 
 .contact h2 {
