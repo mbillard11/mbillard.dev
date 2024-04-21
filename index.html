@@ -232,49 +232,25 @@
           <form action="https://api.web3forms.com/submit" method="POST">
             <!-- Replace with your Access Key -->
             <input type="hidden" name="access_key" value="61895d31-fa6e-47c2-88a2-bc2ac66a2bcc">
-            <div class="form-control">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="sender-name"
-                placeholder="Enter Your Name"
-                class="input-field"
-                required
-              />
+
+            <!-- Name -->
+            <div class="form-group form-name position-relative">
+              <input type="text" id="formName" class="form-control form-control-lg thick" name="sender-name" placeholder="Name">
             </div>
-            <div class="form-control">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="sender-email"
-                placeholder="Enter Your Email"
-                class="input-field"
-                required
-              />
+            <!-- E-mail -->
+            <div class="form-group form-email position-relative">
+              <input type="email" id="formEmail" class="form-control form-control-lg thick" name="sender-email" placeholder="E-mail">
             </div>
-            <div class="form-control">
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                cols="60"
-                rows="10"
-                placeholder="Enter Your Message"
-                name="message"
-                class="input-field"
-                required
-              ></textarea>
+            <!-- Message -->
+            <div class="form-group form-message message position-relative">
+              <textarea id="formMessage" class="form-control form-control-lg" rows="7" name="sender-message" placeholder="Message"></textarea>
             </div>
             <!-- hCaptcha Spam Protection -->
-            <div class="h-captcha" data-captcha="true"></div>
-            <!-- <input
-              type="submit"
-              value="Submit"
-              id="submit-btn"
-              class="submit-btn"
-            /> -->
-            <button type="submit" id="submit-btn" class="submit-btn">Submit</button>
+            <div class="h-captcha" data-captcha="true" data-size="normal"></div>
+            <!-- Submit btn -->
+            <div class="text-center">
+              <button type="submit" id="submit-btn" class="btn btn-primary submit-btn" tabIndex="-1">Send message</button>
+            </div>
           </form>
         </div>
       </div>
