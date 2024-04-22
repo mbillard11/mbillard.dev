@@ -102,20 +102,6 @@ body {
   background-size: cover;
 }
 
-ul {
-  margin:0 0 0 20px;
-  padding:0;
-  list-style:none;
-  list-style-type:none;
-  display:flex;
-  align-items:center
-}
-
-li {
-  display: flex;
-  align-items: center;
-}
-
 #home {
   position: relative;
   top: 30%;
@@ -313,7 +299,6 @@ li {
 .contact h2 {
   color: white;
   text-align: center;
-  margin-top: 2rem;
   margin-bottom: var(--bottom-margin-2);
 }
 
@@ -337,6 +322,7 @@ form {
   .form-group {
     margin: 1rem 1rem;
   }
+
   .form-group:before {
       font-family: 'FontAwesome';
       position: absolute;
@@ -419,6 +405,93 @@ form {
 
 .submit-btn {
   width: 100%;
+}
+
+.site-footer {
+  background-color:#26272b;
+  padding: 2rem;
+  font-size: 15px;
+  line-height: 24px;
+  color: #737373;
+}
+
+.site-footer .social-icons {
+  text-align:right
+}
+
+.site-footer .social-icons a {
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+
+#copy-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.copyright-text {
+  margin:0
+}
+
+.social-icons {
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+
+.social-icons li {
+  display:inline-block;
+  margin-bottom:4px
+}
+
+.social-icons a {
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover {
+  color:#fff;
+  background-color:#29aafe
+}
+
+.social-icons.size-sm a {
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+
+.social-icons a.linkedin:hover {
+  background-color:#0077b5 
+}
+
+.social-icons a.github:hover {
+  background-color:#6cc644
+}
+.social-icons a.twitter:hover {
+  background-color:#1DA1F2
+}
+
+.social-icons a.briefcase:hover {
+  background-color:#8e9ea4
 }
 
 /* Hexagons */
@@ -688,7 +761,7 @@ form {
     }
   }
   .contact {
-    padding: 2rem;
+    padding: 5rem 2rem;
   }
   .contact-form-container {
     padding: 0.5rem;
@@ -696,6 +769,15 @@ form {
   }
   .h-captcha {
     transform:scale(0.7);
+  }
+  .site-footer [class^=col-] {
+    margin-bottom:30px
+  }
+  .site-footer {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons{
+    text-align:center
   }
 }
 
