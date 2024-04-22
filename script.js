@@ -66,3 +66,21 @@ function updateFontColor(eleRef, color) {
 function waitForMs(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
+
+$(document).ready(function() {
+  // Show or hide the sticky footer button
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 200) {
+      $('.go-to-top').fadeIn(200);
+    } else {
+      $('.go-to-top').fadeOut(200);
+    }
+  });
+  
+  // Animate the scroll to top
+  $('.go-to-top').click(function(event) {
+    event.preventDefault();
+
+    $('html, body').animate({scrollTop: 0}, 300);
+  })
+});
