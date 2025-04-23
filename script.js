@@ -14,7 +14,7 @@ function calcTextColor() {
 
 const carouselText = [
   { text: "Mitchell Billard", color: text_color },
-  { text: "a Developer", color: text_color },
+  { text: "a Software Developer", color: text_color },
   { text: "a Pipeline TD", color: text_color },
 ];
 
